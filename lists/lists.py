@@ -10,7 +10,7 @@ def add_elem_to_list(list, elem):
 def delete_elem_from_list(list, index = -1):
     l = size_of_list(list)
     i = 0
-    empty = []
+    # empty = []
     
     if index < 0:
         i = l + index
@@ -18,7 +18,7 @@ def delete_elem_from_list(list, index = -1):
         i = index
     
     if i < 0 or i >= l:
-        return empty
+        return []
     
     list.pop(i)
     return list
@@ -46,7 +46,7 @@ def reverse(list):
 
 # print(size_of_list([1, 4]))
 # print(add_elem_to_list([1, 2], 3))
-# print(delete_elem_from_list([0, 2, 6, 10, 13, 17, 6, 10, 20, 30], 9))
+print(delete_elem_from_list([0, 2, 6, 10, 13, 17, 6, 10, 20, 30, 15, 77], 90))
 # print(delete_elem_from_list([7, 'cat', 9], -2))
 # print(count_elements_in_list([5, 7, 15, 7, 5, 5], 5))
 # print(sort_list([5, 4, 3, 2, 1, 0]))
